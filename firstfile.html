@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        th{
+            border-style: double;
+        }
+        
+    </style>
+    <script>
+        function textTo(color, el){
+            document.getElementById(el).style.color= color;
+        }
+        function backroundTo(color,el){
+            document.getElementById(el).style.backgroundColor = color;
+        }
+        // function textTo(color){
+        //     document.getElementById("myT").style.color= color;
+        // }
+       // function backgroundTo(color){
+           // document.getElementById("myT").style.backgroundColor= color;
+       // }
+    </script> 
+<head>
+<title>my first JS page</title>
+</head>
+<body>
+
+<h1 id = "myText">I can change my color</h1>
+
+<table style="width:10%">
+  <tr>
+    <th style="color:red" onclick="textTo ('red', 'myText')">red</th> 
+    <th style="color:blue" onclick="textTo ('blue' , 'myText') ">blue</th> 
+    <th style="color:green" onclick="textTo ('green', 'myText')">green</th>
+  
+</table>
+
+<h1 id = "text">I can change my background-color</h1>
+<h2></h2>
+
+<table style="width:10%">
+  <tr>
+    <th style="background-color:red" onclick="backroundTo ('red','text')">red</th> 
+    <th style="background-color:blue" onclick="backroundTo ('blue','text') ">blue</th> 
+    <th style="background-color:green" onclick="backroundTo ('green','text')">green</th>
+
+  
+  </table>
+
+  <h1 id = "myT">I can change everything</h1>
+<table style="width:10%">
+    <tr>
+      <th style="color:red" onclick="textTo ('red','myT')">red</th> 
+      <th style="color:blue" onclick="textTo ('blue','myT') ">blue</th> 
+      <th style="color:green" onclick="textTo ('green','myT')">green</th>
+    <tr>
+
+    <tr>
+      <th style="background-color:red" onclick="backroundTo ('red','myT')">red</th> 
+      <th style="background-color:blue" onclick="backroundTo ('blue','myT') ">blue</th> 
+      <th style="background-color:green" onclick="backroundTo ('green','myT')">green</th>
+    </tr>
+</table>
+
+</body>
+</html>
